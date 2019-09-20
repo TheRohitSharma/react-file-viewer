@@ -19,7 +19,7 @@ class VideoViewer extends Component {
 
   renderLoading() {
     if (this.state.loading) {
-      return <Loading />;
+      return <Loading loader={this.props.loader} />;
     }
     return null;
   }

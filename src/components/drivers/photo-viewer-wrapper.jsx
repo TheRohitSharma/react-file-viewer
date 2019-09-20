@@ -53,7 +53,7 @@ export default class PhotoViewerWrapper extends Component {
 
   render() {
     if (!this.state.imageLoaded) {
-      return <Loading />;
+      return <Loading loader={this.props.loader} />;
     }
     const { originalWidth, originalHeight } = this.state;
     const PhotoDriver = getPhotoDriver(originalWidth, originalHeight, this.props.fileType);

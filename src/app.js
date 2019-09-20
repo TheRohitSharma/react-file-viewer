@@ -22,8 +22,8 @@ import pdf from '../example_files/sample.pdf';
 
 ReactDOM.render(
   <FileViewer
-    fileType="pdf"
-    filePath={pdf}
+    fileType="png"
+    filePath={'https://www.hq.nasa.gov/alsj/a17/A17_FlightPlan.pdf'}
   />,
   window.document.getElementById('app')
 );

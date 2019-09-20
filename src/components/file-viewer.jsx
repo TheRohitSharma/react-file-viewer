@@ -75,7 +75,7 @@ class FileViewer extends Component {
     return (
       <div className="pg-viewer-wrapper">
         <div className="pg-viewer" id="pg-viewer">
-          <Driver {...this.props} width={this.state.width} height={this.state.height} />
+          <Driver loader={this.props.loader} {...this.props} width={this.state.width} height={this.state.height} />
         </div>
       </div>
     );
@@ -88,12 +88,14 @@ FileViewer.propTypes = {
   onError: PropTypes.func,
   errorComponent: PropTypes.element,
   unsupportedComponent: PropTypes.element,
+  loader: PropTypes.node,
 };
 
 FileViewer.defaultProps = {
   onError: () => null,
   errorComponent: null,
   unsupportedComponent: null,
+  loader: <span className="loading" />,
 };
 
 export default FileViewer;

@@ -4,10 +4,11 @@ import React from 'react';
 
 import 'styles/loading.scss';
 
-const Loading = () => (
+const Loading = ({ loader }) => (
   <div className="loading-container">
-    <span className="loading" />
+    { loader }
   </div>
 );
+
 
 export default Loading;

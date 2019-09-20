@@ -35,7 +35,7 @@ export default class extends Component {
   render() {
     return (
       <div id="docx">
-        <Loading />
+        <Loading loader={this.props.loader} />
       </div>);
   }
 }

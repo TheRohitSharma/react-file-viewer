@@ -62,7 +62,7 @@ export class PDFPage extends React.Component {
 
   render() {
     return (
-      <div className="pdf-canvas">
+      <div className="pdf-canvas text-center">
         {this.props.disableVisibilityCheck ? <canvas ref={node => this.canvas = node} width="670" height="870" /> : (
           <VisibilitySensor onChange={this.onChange} partialVisibility >
             <canvas ref={node => this.canvas = node} width="670" height="870" />

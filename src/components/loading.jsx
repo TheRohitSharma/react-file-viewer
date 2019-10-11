@@ -5,7 +5,7 @@ import React from 'react';
 import 'styles/loading.scss';
 
 const Loading = ({ loader }) => (
-  <div className="loading-container">
+  <div className="progress-container">
     { loader }
   </div>
 );
